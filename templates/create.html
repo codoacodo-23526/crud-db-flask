@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peliculas</title>
+</head>
+
+<body>
+
+    <h1>Crear Pelicula</h1>
+    <div>
+        <form method="post" action="/store" enctype="multipart/form-data">
+            <label>
+                <input type="text" name="nombre" id="nombre" placeholder="ingrese la pelicula" />                
+            </label>
+
+            <label>
+                <input type="text" name="rating" id="rating" placeholder="ingrese rating" />                
+            </label>
+
+            <label>
+                <input type="text" name="premios" id="premios" placeholder="ingrese premios" />                
+            </label>
+
+            <label>
+                <input type="text" name="genero" id="genero" placeholder="ingrese genero" />                
+            </label>
+
+            <div>
+                <button type="submit">Guardar Pelicula</button>
+            </div>
+
+        </form> 
+
+    </div>
+</body>
+
+</html>

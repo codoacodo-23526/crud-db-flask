@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peliculas</title>
+</head>
+
+<body>
+
+    <div>
+        <a href="/create" >Crear Pelicula</a>
+    </div>
+
+    <div>
+        <table border="1">
+            <thead>
+                <th>id</th>
+                <th>nombre</th>
+                <th>rating</th>
+                <th>premios</th>
+                <th>genero</th>
+            </thead>
+            <tbody>
+                {% for item in movies %}
+                <tr>
+                    <td>{{ item[0] }}</td>
+                    <td>{{ item[3] }}</td>
+                    <td>{{ item[4] }}</td>
+                    <td>{{ item[5] }}</td>
+                    <td>{{ item[8] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
